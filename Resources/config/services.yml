@@ -1,0 +1,15 @@
+services:
+    fys.twig_extension:
+        class: FYS\HookBundle\Component\Extension\TwigExtension
+        arguments: ["@service_container"]
+        tags:
+            - { name: twig.extension }
+
+    fys.hook_manager:
+        class: FYS\HookBundle\Component\HookManager
+
+    app.hooks.hook_head:
+        class: FYS\HookBundle\Component\Hooks\HookHead
+        arguments: ["@service_container"]
+        tags:
+            - { name: hook.type }
