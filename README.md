@@ -1,4 +1,7 @@
-# Symfony Hook Bundle
+# FYS Hook Bundle
+
+## Description
+FYS Hook Bundle allows you to make a hook and simply call it in twig templating engine
 ## Installation
 ```
 composer require fys/hook-bundle
@@ -40,4 +43,4 @@ class HeadHook
     }
 }
 ```
-then, you can call ```{{ call_hook('hookname') }}``` in twig template, it will print "HELLO THIS IS MY FIRST HOOK" 
+then, you can call ```{{ call_hook('head') }}``` in twig template, it will print "HELLO THIS IS MY FIRST HOOK" 
