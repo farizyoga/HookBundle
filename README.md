@@ -22,7 +22,9 @@ second, create the class that you mentioned in the service
 
 namespace AppBundle/Component/Hooks;
 
-class HeadHook
+use FYS\HookBundle\Component\HookInterface;
+
+class HeadHook implements HookInterface
 {
     public function getName()
     {
@@ -43,4 +45,5 @@ class HeadHook
     }
 }
 ```
+note: the hook class should implements HookInterface
 then, you can call ```{{ call_hook('head') }}``` in twig template, it will print "HELLO THIS IS MY FIRST HOOK" 
