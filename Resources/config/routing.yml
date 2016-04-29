@@ -1,3 +1,0 @@
-fys_hook_homepage:
-    path:     /
-    defaults: { _controller: FYSHookBundle:Default:index }
