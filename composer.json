@@ -1,5 +1,5 @@
 {
-    "name": "FYS/hook-bundle",
+    "name": "fys/hook-bundle",
     "description": "provide hook on twig template",
     "require": {
         "php": ">=5.3.0"
